@@ -1,0 +1,124 @@
+/* Body */
+body {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+#anounce {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Container Centering */
+#introduction,
+#statScores,
+#rollingMethod,
+#statsRolled {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 90%; /* Set max width to 90% of the page width */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+}
+
+/* Buttons */
+button {
+    background-color: #1c4a6e; /* Non-intrusive blue tint */
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Calculate Button (Brightest Blue) */
+#calculateButton {
+    background-color: #1a73e8;
+}
+
+button:hover {
+    background-color: #184056; /* Slightly darker on hover */
+}
+
+#calculateButton:hover {
+    background-color: #1c4a6e; /* Slightly darker on hover */
+}
+
+/* Input Labels */
+label {
+    font-size: 18px;
+}
+
+/* Input Fields */
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e0e0e0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Output Container */
+#output {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.4; /* Increase line height for readability */
+    max-width: 90%; /* Set max width to 90% of the page width */
+    min-height: 300px; /* Increase the minimum height */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #80c8ff;
+}
+
+/* Set default link color */
+a:visited {
+    color: #66b3ff;
+}
+
+/* Center text inside output container */
+#output p {
+    margin: 0;
+}
+
+/* Centered layout for small screens */
+@media (max-width: 600px) {
+    #introduction,
+    #statScores,
+    #rollingMethod,
+    #statsRolled,
+    #output {
+        width: 90%;
+    }
+}

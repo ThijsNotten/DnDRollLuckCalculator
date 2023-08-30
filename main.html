@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&amp;D Character Rolled Stats Luck Calculator</title>
+    <!-- Link to your external JavaScript files -->
+    <script src="Buttons.js" defer></script>
+    <script src="Calculator.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>D&amp;D Character Rolled Stats Luck Calculator</h1>
+
+    <div id="introduction">
+        <p>Discover how fortunate your stat rolls are with this calculator. Quantify the luckiness of your stats and express it in numbers.<br>
+            Evaluating the value of different stat distributions can be subjective. <br> 
+            For example, rolling {15, 15, 12, 12, 12, 12} is often preferred over {13, 13, 13, 13, 13, 13}, despite having the same total points. <br>
+            To address this, we assign a score to each stat, reflecting its relative importance.</p>
+    </div>
+
+    <div id="statScores">
+        <p>We've pre-filled recommended scores, but you can also assign equal values to each point or customize your own distribution.</p><br>
+        <button id="setDefaultScores">Set Recommended Scores</button>
+        <button id="setCorrespondingNumbers">Set Equal Values</button><br><br>
+        <label id="anounce" for="scores">Value for each stat:</label><br><br>
+        <div id="scoresContainerRow1"></div>
+        <div id="scoresContainerRow2"></div><br>
+    </div>
+
+    <div id="rollingMethod">
+        <p>How did you roll for your stats? Did you roll 4d6 and choose the highest 3 outcomes for each stat? <br>
+            Or did you roll a d20 for each stat? If you used a different method, you can manually enter the chance distribution.</p><br>
+        <button id="setRoll4Take3">4d6 Take Highest 3</button>
+        <button id="setRollD20">d20</button><br><br>
+        <label id="anounce" for="chanceDistribution">Chance distribution:</label><br><br>
+        <div id="chanceDistributionContainerRow1"></div>
+        <div id="chanceDistributionContainerRow2"></div><br>
+    </div>
+
+    <div id="statsRolled">
+        <p>Please input your values for each stat.</p><br>
+        <label id="anounce" for="rolledStats">Your rolled stats:</label><br><br>
+        <div id="rolledStatsContainer"></div><br>
+    </div>
+    <div id="output">
+        <button id="calculateButton">Calculate</button><br><br>
+    </div>
+</body>
+</html>
