@@ -104,7 +104,7 @@ function CalculateChances(distribution, luckScore) {
 }
 
 function showChances(chancePercentageBetter, charactersTakenBetter, chancePercentageWorse, charactersTakenWorse) {
-    document.getElementById("output").innerHTML += `
+    document.getElementById("outputBox").innerHTML = `
 Chance of these rolls or better: ${chancePercentageBetter}% <br>
 These stats or better happens about once every ${charactersTakenBetter} characters. <br>
 <br>
